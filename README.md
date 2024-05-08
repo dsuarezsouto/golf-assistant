@@ -28,11 +28,24 @@ git clone https://github.com/dsuarezsouto/golf-assistant.git
 # Navigate to the project directory
 cd golf-assistant
 
-# Install dependencies
-pip install -r requirements.txt
+# Create python environemtn and install dependencies
+pipenv install --python 3.11
+pipenv shell
+```
 
+Create `src/config.py` script:
+
+```python
+import os
+OPENAI_API_KEY='Your OpenAI key'
+
+def set_environment():
+    os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
+```
+
+```bash
 # Run the application
-streamlit run app.py
+streamlit run src/app.py
 ```
 
 ## Usage

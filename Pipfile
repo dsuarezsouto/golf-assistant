@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pip_conf_index_:env:"
+
+[packages]
+huggingface-hub = ">=0.14.1"
+openai = "==0.28.1"
+pypdf = ">=3.12.2"
+streamlit = ">=1.24.1"
+langchain-decorators = ">=0.2.3"
+langchain
+cryptography = ">=3.1"
+
+[dev-packages]
+pytest
+
+[requires]
+python_version = "3.11"
